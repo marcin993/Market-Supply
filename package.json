@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp build",
+    "development": "gulp"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Marcin Lasecki",
+  "license": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.1.2",
+    "run-sequence": "^1.2.2",
+    "uglify": "^0.1.5"
+  }
+}

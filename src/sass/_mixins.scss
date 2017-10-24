@@ -1,0 +1,71 @@
+                                                                                //CLASSES
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+                                                                               //MIXINS
+
+@mixin horizontalMenu($margin, $aColor, $aHoverColor, $animate: false) {
+    li {
+        display: inline-block;
+        margin-right: $margin;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            color: $aColor;
+            text-decoration: none;
+            @if $animate {
+                transition: $animate;
+            }
+            &:hover {
+                color: $aHoverColor;
+            }
+        }
+    }
+}
+
+@mixin textHover($color, $properties: color, $timer: .20s) {
+    transition: $properties $timer;
+    &:hover {
+        color: $color;
+    }
+}
+
+@mixin columnList($count, $gap: false) {
+    -moz-column-count: $count;
+    -webkit-column-count: $count;
+    column-count: $count;
+    
+    @if $gap {
+        -moz-column-gap: $gap;
+        -webkit-column-gap: $gap;
+        column-gap: $gap;
+    }
+}
+
+@mixin lastElemMargin() {
+    &:last-child {
+        margin-bottom: 0rem;
+    }
+}
